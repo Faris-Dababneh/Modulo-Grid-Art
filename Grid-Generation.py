@@ -4,7 +4,7 @@ import random
 pygame.init()
 
 WINDOW = pygame.display.set_mode((1300, 1100))
-pygame.display.set_caption('Grid Modulo Art for Discrete Math (this took me 8 hours please give me extra credit)')
+pygame.display.set_caption('Grid Modulo Art for Discrete Math')
 
 U_W, U_H = 50, 50
 
@@ -56,7 +56,7 @@ def draw_window(color, user_text, color2, mode_text, color3):
     button_text_surface = base_font.render('Generate', True, (255, 255, 255))
     mode_text = base_font.render(mode_text, True, (255, 255, 255))
 
-    credit = font.render("Made by Faris Dababneh for Mr. Snow (Please give me extra credit)", True, (255,255, 255))
+    credit = font.render("Made by Faris Dababneh", True, (255,255, 255))
 
     WINDOW.blit(text_surface, (input_rect.x+5, input_rect.y+5))
     WINDOW.blit(button_text_surface, (submit.x+10, submit.y+8))
